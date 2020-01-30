@@ -1,0 +1,31 @@
+{
+  "name": "ig_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihenvyr/ig_bot.git"
+  },
+  "keywords": [],
+  "author": "Henry C. Cruz <ihenvyr@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ihenvyr/ig_bot/issues"
+  },
+  "homepage": "https://github.com/ihenvyr/ig_bot#readme",
+  "devDependencies": {
+    "instamancer": "3.1.0",
+    "isomorphic-unfetch": "3.0.0",
+    "lodash": "4.17.15",
+    "nodemon": "2.0.2",
+    "puppeteer": "2.1.0"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "twitter-text": "3.0.1"
+  }
+}
