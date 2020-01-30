@@ -85,7 +85,7 @@ app.get("/hashtag/:hashtag/posts/:total?", async (req, res) => {
   const response = [];
 
   try {
-    const hashtag = createApi("hashtag", "javascript", { ...options, total: req.params.total || 5 });
+    const hashtag = createApi("hashtag", req.params.hashtag, { ...options, total: req.params.total || 5 });
     for await (const post of hashtag.generator()) {
       // console.log(`HASHTAG >>> timestamp: ${new Date(post.node.taken_at_timestamp * 1000)}\n`);
       // console.log(post);
